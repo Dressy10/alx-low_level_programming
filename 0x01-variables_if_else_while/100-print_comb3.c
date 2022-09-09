@@ -7,6 +7,7 @@
 int main(void)
 {
 	int i, e;
+
 	i = 48;
 	e = 48;
 	while (e < 58)
@@ -28,6 +29,7 @@ int main(void)
 			i++;
 		}
 		e++;
-		putchar('\n');
-		return (0);
+	}
+	putchar('\n');
+	return (0);
 }

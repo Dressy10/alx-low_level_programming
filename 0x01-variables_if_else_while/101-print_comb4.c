@@ -6,7 +6,8 @@
  **/
 int main(void)
 {
-	int i, e, g:
+	int i, e, g;
+
 	i = 48;
 	e = 48;
 	g = 48;
@@ -36,6 +37,6 @@ int main(void)
 		}
 		e++;
 	}
-	puchar('\n');
+	putchar('\n');
 	return (0);
 }

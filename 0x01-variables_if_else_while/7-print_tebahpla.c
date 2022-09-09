@@ -1,4 +1,4 @@
-#inlde <stdio.h>
+#include <stdio.h>
 /**
  *  main - Prints the alphabets in a reverse manner.
  *

@@ -5,17 +5,20 @@
  **/
 int main(void)
 {
-	long int n, fp;
+	unsigned int a = 2;
+	unsigned long n = 612852475143;
 
-	n = 612852475143;
-	for (fp = 2; fp <= n; fp++)
+	while (a != n)
 	{
-		if (n % fp == 0)
+		if (n % a == 0)
 		{
-			n /= fp;
-			fp--;
+			n = n / a;
+		}
+		else
+		{
+			a++;
 		}
 	}
-	printf("%ld\n", fp);
+	printf("%lu\n", n);
 	return (0);
 }

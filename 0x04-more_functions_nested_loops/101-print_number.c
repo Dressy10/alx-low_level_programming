@@ -6,28 +6,40 @@
  **/
 void print_number(int n)
 {
-	unsigned int m, d, count;
+	int i;
+	int d = 1;
+	unsigned int x = n;
+	unsigned int y = n;
+	int c = 0;
 
+	if (n == 0)
+	{
+		_putchar('0');
+	}
 	if (n < 0)
 	{
-		_putchar(45);
-		m = n * -1;
-
+		_putchar('-');
+		n = n + 1;
+		n = -n;
+		y = n;
+		x = n;
+		x += 1;
+		y += 1;
 	}
-	else
+	while (x != 0)
 	{
-		m = n;
+		x = x / 10;
+		c++;
 	}
-	d = m;
-	count = 1;
-	while (d > 9)
+	for (i = 1; i < c; i++)
 	{
-		d /= 10;
-		count *= 10;
+		d *= 10;
 	}
-	for (; count >= 1; count /= 10)
+	for (i = 0; i < c; i++)
 	{
-		_putchar(((m / count) % 10) + 48);
+		_putchar(y / d + '0');
+		y = y % d;
+		d = d / 10;
 	}
 }
 

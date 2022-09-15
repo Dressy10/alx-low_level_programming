@@ -5,11 +5,11 @@
  **/
 void print_numbers(void)
 {
-	int ch;
+	int i;
 
-	for (ch = 48; ch < 58; ch++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		_putchar(ch);
+		_putchar(i);
 	}
 	_putchar('\n');
 }

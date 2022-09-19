@@ -10,7 +10,7 @@
  **/
 char *_strcpy(char *dest, char *src)
 {
-	int i = 0;
+	int count = 0;
 
 	while (count >= 0)
 	{
@@ -19,5 +19,5 @@ char *_strcpy(char *dest, char *src)
 			break;
 		count++;
 	}
-	return (dest)
+	return (dest);
 }

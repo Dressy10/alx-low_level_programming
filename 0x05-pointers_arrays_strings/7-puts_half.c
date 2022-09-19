@@ -4,7 +4,7 @@
  * @str: input string
  * Return: no return
  **/
-void puts_half(char *str);
+void puts_half(char *str)
 {
 	int count = 0, i;
 

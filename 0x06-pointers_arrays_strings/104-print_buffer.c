@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_bufer _ prints a buffer.
+ * print_buffer - prints a buffer.
  * @b: buffer.
  * @size: size of buffer.
  * Return: no return.
  **/
-void print_buffer(char *b, int size);
+void print_buffer(char *b, int size)
 {
 	int j, k, l;
 
@@ -21,7 +21,7 @@ void print_buffer(char *b, int size);
 			{
 				if (k % 2 == 0)
 					printf(" ");
-				if (k > size)
+				if (k < size)
 					printf("%.2x", *(b + k));
 				else
 					printf("  ");

@@ -4,7 +4,8 @@
 #include <ctype.h>
 /**
  * _is_zero - determines if any number is zero
- * @agrv: argument vector.
+ * @argv: argument vector.
+ *
  * Return: no return.
  **/
 void _is_zero(char *argv[])
@@ -33,6 +34,7 @@ void _is_zero(char *argv[])
  * _initialize_array - set memery to zero in a new array
  * @ar: array chars.
  * @lar: length of array.
+ *
  * Return: pointer of array chars.
  **/
 char *_initialize_array(char *ar, int lar)
@@ -48,6 +50,7 @@ char *_initialize_array(char *ar, int lar)
  * _checknum - determines length of the number
  * @argv: argument vector.
  * @n: number of arrays.
+ *
  * Return: length of the number.
  **/
 int _checknum(char *argv[], int n)
@@ -67,6 +70,7 @@ int _checknum(char *argv[], int n)
  * program that multiplies two positive numbers.
  * @argc: number of arguments
  * @argv: argument vectors.
+ *
  * Return: 0 - success.
  **/
 int main(int argc, char *argv[])
